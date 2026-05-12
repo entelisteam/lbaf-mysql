@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
-         bootstrap="vendor/autoload.php"
+         bootstrap="tests/bootstrap.php"
          colors="true"
          failOnRisky="true"
          displayDetailsOnPhpunitDeprecations="true"
@@ -9,7 +9,17 @@
          displayDetailsOnTestsThatTriggerNotices="true">
     <testsuites>
         <testsuite name="unit">
-            <directory>tests/unit</directory>
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="integration">
+            <directory>tests/Integration</directory>
         </testsuite>
     </testsuites>
+    <php>
+        <env name="LBAF_TEST_DB_HOST" value="127.0.0.1"/>
+        <env name="LBAF_TEST_DB_PORT" value="33306"/>
+        <env name="LBAF_TEST_DB_USER" value="root"/>
+        <env name="LBAF_TEST_DB_PASSWORD" value=""/>
+        <env name="LBAF_TEST_DB_NAME" value="lbaf_test"/>
+    </php>
 </phpunit>

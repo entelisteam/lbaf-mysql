@@ -27,7 +27,7 @@ class MySqlConfig
     /**
      * @var string Кодировка в формате SET NAMES ...
      */
-    public string $encoding = 'UTF8';
+    public string $encoding = 'utf8mb4';
 
     /**
      * @var bool Устанавливать соединение с базой при первом запросе, а не при инициализации.
