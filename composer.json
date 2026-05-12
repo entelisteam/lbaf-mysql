@@ -33,6 +33,9 @@
       "EntelisTeam\\Lbaf\\MySql\\Tests\\": "tests/"
     }
   },
+  "extra": {
+    "lbaf-rector-migrations": "EntelisTeam\\Lbaf\\MySql\\Rector\\Migrations"
+  },
   "scripts": {
     "test": "vendor/bin/phpunit --display-warnings",
     "test:unit": "vendor/bin/phpunit --testsuite=unit --display-warnings",
