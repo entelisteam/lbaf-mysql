@@ -373,7 +373,7 @@ class MySql
                 $totalTime += $item->time;
             }
             echo '<tr><td></td><td><b>Total: ', count($log), ' queries</b></td><td><b>' . $totalTime . '</b></td></tr>';
-            echo '<table>';
+            echo '</table>';
         }
     }
 
