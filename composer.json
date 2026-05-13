@@ -20,7 +20,8 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^12.0",
-    "rector/rector": "^2.3.0"
+    "rector/rector": "^2.3.0",
+    "entelisteam/lbaf-rector": "^1.0"
   },
   "autoload": {
     "psr-4": {
@@ -34,14 +35,16 @@
     }
   },
   "extra": {
-    "lbaf-rector-migrations": "EntelisTeam\\Lbaf\\MySql\\Rector\\Migrations"
+    "lbaf-rector-migrations": "EntelisTeam\\Lbaf\\MySql\\Rector\\MigrationList"
   },
   "scripts": {
     "test": "vendor/bin/phpunit --display-warnings",
     "test:unit": "vendor/bin/phpunit --testsuite=unit --display-warnings",
     "test:integration": "vendor/bin/phpunit --testsuite=integration --display-warnings",
     "db:up": "docker container inspect lbaf-mysql-test > /dev/null 2>&1 || docker run -d --rm --name lbaf-mysql-test -p 33306:3306 --tmpfs /var/lib/mysql -e MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=yes -e MARIADB_DATABASE=lbaf_test mariadb:11",
-    "db:down": "docker stop lbaf-mysql-test > /dev/null 2>&1 || true"
+    "db:down": "docker stop lbaf-mysql-test > /dev/null 2>&1 || true",
+    "rector:check": "vendor/bin/rector process --dry-run",
+    "rector:fix": "vendor/bin/rector process"
   },
   "minimum-stability": "stable"
 }

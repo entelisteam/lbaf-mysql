@@ -10,7 +10,7 @@ use Rector\Renaming\Rector\Name\RenameClassRector;
 /**
  * Миграция для downstream-проектов: переход с Lbaf-овских namespace'ов на отдельный пакет
  */
-final class M20260512_0830_MySqlSplit
+final class Migration_20260512_0830_MySqlSplit
 {
     /**
      * Применяет правила миграции к существующему конфигуратору.
