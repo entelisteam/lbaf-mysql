@@ -3,4 +3,3 @@
 vendor
 .php-cs-fixer.cache
 /.phpunit*
-/composer.lock
