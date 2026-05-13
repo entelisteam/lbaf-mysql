@@ -8,27 +8,28 @@
     "packages": [
         {
             "name": "entelisteam/lbaf-exception",
-            "version": "1.1",
+            "version": "1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/entelisteam/lbaf-exception.git",
-                "reference": "d8a010fbfc1a318121568b59477c16866c01470f"
+                "reference": "818f936949cb0e184b998474931ff204c4091a3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/entelisteam/lbaf-exception/zipball/d8a010fbfc1a318121568b59477c16866c01470f",
-                "reference": "d8a010fbfc1a318121568b59477c16866c01470f",
+                "url": "https://api.github.com/repos/entelisteam/lbaf-exception/zipball/818f936949cb0e184b998474931ff204c4091a3b",
+                "reference": "818f936949cb0e184b998474931ff204c4091a3b",
                 "shasum": ""
             },
             "require": {
                 "php": "~8.2"
             },
             "require-dev": {
+                "entelisteam/lbaf-rector": "^1.0",
                 "rector/rector": "^2.3.0"
             },
             "type": "library",
             "extra": {
-                "lbaf-rector-migrations": "EntelisTeam\\Lbaf\\Exception\\Rector\\Migrations"
+                "lbaf-rector-migrations": "EntelisTeam\\Lbaf\\Exception\\Rector\\MigrationList"
             },
             "autoload": {
                 "psr-4": {
@@ -50,9 +51,9 @@
             "description": "Exceptions from LBAF",
             "support": {
                 "issues": "https://github.com/entelisteam/lbaf-exception/issues",
-                "source": "https://github.com/entelisteam/lbaf-exception/tree/1.1"
+                "source": "https://github.com/entelisteam/lbaf-exception/tree/1.2"
             },
-            "time": "2026-05-12T18:47:20+00:00"
+            "time": "2026-05-13T07:54:32+00:00"
         }
     ],
     "packages-dev": [
@@ -62,12 +63,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/entelisteam/lbaf-rector.git",
-                "reference": "0b0f7d60842b7b2cf15da35bcbbb8da3cabb1549"
+                "reference": "0b9b50b09105c7ed516f554953e5bd160b502d24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/entelisteam/lbaf-rector/zipball/0b0f7d60842b7b2cf15da35bcbbb8da3cabb1549",
-                "reference": "0b0f7d60842b7b2cf15da35bcbbb8da3cabb1549",
+                "url": "https://api.github.com/repos/entelisteam/lbaf-rector/zipball/0b9b50b09105c7ed516f554953e5bd160b502d24",
+                "reference": "0b9b50b09105c7ed516f554953e5bd160b502d24",
                 "shasum": ""
             },
             "require": {
@@ -106,7 +107,7 @@
                 "issues": "https://github.com/entelisteam/lbaf-rector/issues",
                 "source": "https://github.com/entelisteam/lbaf-rector/tree/1.0"
             },
-            "time": "2026-05-13T07:41:31+00:00"
+            "time": "2026-05-13T07:50:33+00:00"
         },
         {
             "name": "myclabs/deep-copy",
